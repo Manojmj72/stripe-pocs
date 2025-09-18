@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple SPA Store - Stripe Checkout</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple SPA Store</h1>
+    <div id="products" class="grid"></div>
+
+    <h2>Cart</h2>
+    <div id="cart">
+      <p>No items in cart.</p>
+    </div>
+
+    <div class="checkout-area">
+      <input id="email" type="email" placeholder="Your email (optional)" />
+      <button id="checkout-btn" disabled>Checkout with Stripe</button>
+    </div>
+
+    <p class="note">This demo uses Stripe Hosted Checkout (test mode). Use test card: 4242 4242 4242 4242.</p>
+  </div>
+
+  <script>
+    window.STRIPE_PUBLIC_KEY = "{{STRIPE_PUBLIC_KEY}}";
+  </script>
+  <script src="/app.js"></script>
+</body>
+</html>

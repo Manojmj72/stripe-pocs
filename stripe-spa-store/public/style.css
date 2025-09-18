@@ -1,0 +1,57 @@
+/* style.css - minimal styling */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  margin: 0;
+  padding: 20px;
+  background: #f5f7fb;
+  color: #111;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.checkout-area {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+input[type="email"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.note {
+  color: #666;
+  margin-top: 10px;
+  font-size: 14px;
+}
